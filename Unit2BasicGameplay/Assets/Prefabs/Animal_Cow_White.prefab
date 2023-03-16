@@ -57,7 +57,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345013853216607484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.4, y: 0.2, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -363,6 +363,9 @@ GameObject:
   - component: {fileID: 5345013853216532168}
   - component: {fileID: 5345013853209451972}
   - component: {fileID: 5345013852771541514}
+  - component: {fileID: 1626864301}
+  - component: {fileID: 3916451657450963715}
+  - component: {fileID: 1626864306}
   m_Layer: 0
   m_Name: Animal_Cow_White
   m_TagString: Untagged
@@ -377,9 +380,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345013853216608484}
-  m_LocalRotation: {x: 0.020580037, y: -0.99954593, z: 0.019400127, w: -0.010399013}
+  m_LocalRotation: {x: 0.020581925, y: -0.99954593, z: 0.01939929, w: -0.0104002515}
   m_LocalPosition: {x: 7.34, y: 0.00335145, z: 19.12}
-  m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
+  m_LocalScale: {x: 0.089999996, y: 0.09, z: 0.090000026}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5345013853216455332}
@@ -419,6 +422,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+--- !u!114 &1626864301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345013853216608484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb29f142a1b720843885c6dfbc2ca24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &3916451657450963715
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345013853216608484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 24.589516, y: 29.111717, z: 48.730576}
+  m_Center: {x: 0.5486647, y: 14.0558, z: -0.6846253}
+--- !u!114 &1626864306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345013853216608484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ad6db1af84013428037b0a68a902b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5345013853216609892
 GameObject:
   m_ObjectHideFlags: 0

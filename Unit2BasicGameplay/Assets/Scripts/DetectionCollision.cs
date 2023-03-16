@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyOutOfBounds : MonoBehaviour
+public class DetectionCollision : MonoBehaviour
 {
     private float topBound = 30;
     private float lowerBound = -10;
@@ -25,5 +25,10 @@ public class DestroyOutOfBounds : MonoBehaviour
             Destroy(gameObject);
         }
     }
-}
 
+    void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+        Destroy(other.gameObject);
+    }
+}
