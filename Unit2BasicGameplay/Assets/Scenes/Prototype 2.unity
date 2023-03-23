@@ -656,6 +656,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 992285706}
+  - component: {fileID: 992285707}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -681,6 +682,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &992285707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992285705}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 92.92807, y: 0, z: 51.32692}
+  m_Center: {x: 0.17292213, y: -0.5000001, z: 10.60321}
 --- !u!1001 &1343606145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -942,9 +956,9 @@ MonoBehaviour:
   - {fileID: 5345013853216608484, guid: 52854fd216518b543803e5b9a839b9ad, type: 3}
   - {fileID: 5038377533451918307, guid: 74a6ba9911d6d1e40923137e507416d3, type: 3}
   - {fileID: 7965581397570730067, guid: 45c36fb091b07e342bb6d4cccfa22f97, type: 3}
-  sideSpawnMinZ: 0
-  sideSpawnMaxZ: 0
-  sideSpawnX: 0
+  sideSpawnMinZ: 3
+  sideSpawnMaxZ: 15
+  sideSpawnX: 20
 --- !u!4 &1623819762
 Transform:
   m_ObjectHideFlags: 0
@@ -984,7 +998,7 @@ MonoBehaviour:
   zMin: 0
   zMax: 0
   verticalInput: 0
-  projectileSpawnPoint: {fileID: 0}
+  projectileSpawnPoint: {fileID: 1529252624}
 --- !u!4 &2068661494 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f3f69bcf5a1514c458ed5c9b96f28e34, type: 3}
